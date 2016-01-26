@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.siddharth.project0.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="#e0f2f1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/text_subtitle"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#0f183c" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView">
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spotify"
+            android:id="@+id/button"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="45dp"
+            android:onClick="message1"
+            android:backgroundTint="#12a5d0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scores"
+            android:id="@+id/button6"
+            android:layout_gravity="center|top"
+            android:onClick="message2"
+            android:backgroundTint="#12a5d0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/library"
+            android:id="@+id/button2"
+            android:layout_gravity="center|top"
+            android:onClick="message3"
+            android:backgroundTint="#12a5d0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/build_it_bigger"
+            android:id="@+id/button5"
+            android:layout_gravity="center|top"
+            android:onClick="message4"
+            android:backgroundTint="#12a5d0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xyz_reader"
+            android:id="@+id/button3"
+            android:layout_gravity="center|top"
+            android:onClick="message5"
+            android:backgroundTint="#14a6d0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/capstone_my_own_app"
+            android:id="@+id/button4"
+            android:layout_gravity="center|top"
+            android:onClick="message6"
+            android:backgroundTint="#12a5d0" />
+
+    </TableLayout>
+</RelativeLayout>
