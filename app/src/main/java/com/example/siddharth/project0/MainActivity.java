@@ -20,9 +20,6 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        //toolbar.setTitle("HELLO");
-
-
     }
 
     @Override
@@ -49,63 +46,30 @@ public class MainActivity extends AppCompatActivity {
 
     public void message1(View view)
     {
-        Context context = getApplicationContext();
-        CharSequence text = "This button will launch Spotify Streamer app!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast.makeText(context, text, duration).show();
-
+        print_message(getString(R.string.launch_spotify));
     }
     public void message2(View view)
     {
-        Context context = getApplicationContext();
-        CharSequence text = "This button will launch Scores app!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast.makeText(context, text, duration).show();
-
-
+        print_message(getString(R.string.launch_scores));
     }
     public void message3(View view)
     {
-
-        Context context = getApplicationContext();
-        CharSequence text = "This button will launch Library app!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast.makeText(context, text, duration).show();
-
-
-
+        print_message(getString(R.string.launch_library));
     }
     public void message4(View view)
     {
-        Context context = getApplicationContext();
-        CharSequence text = "This button will launch Build it Bigger app!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast.makeText(context, text, duration).show();
-
-
+        print_message(getString(R.string.launch_build_bigger));
     }
     public void message5(View view)
     {
-        Context context = getApplicationContext();
-        CharSequence text = "This button will launch XYZ Reader app!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast.makeText(context, text, duration).show();
-
-
+        print_message(getString(R.string.launch_xyz));
     }
     public void message6(View view)
     {
-        Context context = getApplicationContext();
-        CharSequence text = "This button will launch my capstone app!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast.makeText(context, text, duration).show();
-
-
+        print_message(getString(R.string.launch_capstone));
+    }
+    public void print_message(String str)
+    {
+        Toast.makeText(MainActivity.this, str, Toast.LENGTH_SHORT).show();
     }
 }
